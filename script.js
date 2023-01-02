@@ -10,3 +10,9 @@ hamburger.addEventListener("click", () => {
 cancelMenu.addEventListener("click", () => {
   navMenu.style.left = "-100%";
 });
+
+navItem.forEach(function(list) {
+  list.addEventListener('click', function() {
+    navMenu.style.left = "-100%";
+  })
+})
