@@ -99,9 +99,14 @@ a::after {
   top: 0;
   width: 100%;
   height: 98vh;
-  background-color: #0c0fdad2;
+  background-color: #071eecef;
   padding: 16px;
   text-align: right;
+}
+
+.nav-menu img {
+  padding-top: 14px;
+  left: 100%;
 }
 
 .nav-menu ul {
@@ -329,9 +334,8 @@ a::after {
 }
 
 .top {
-  padding-top: 44px;
-  padding-bottom: 44px;
   margin-left: 12px;
+  padding: 44px 16px;
 }
 
 .info-title {
@@ -369,7 +373,7 @@ a::after {
 .skill-list {
   width: 100%;
   border-radius: 0.01px;
-  padding: 12px;
+  padding: 8px 16px;
   gap: 24px;
 }
 
@@ -588,7 +592,7 @@ a::after {
   background-size: cover;
   padding: 180px 24px 0;
 }
-/*--------------------------The Desktop Version-----------------*/
+
 @media only screen and (min-width: 768px) {
   .hamburger-icon {
     display: none;
