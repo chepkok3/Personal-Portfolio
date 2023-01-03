@@ -19,26 +19,33 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-bar">
-        <a href="" class="logo-info">Stanley</a>
-        <button class="logo-vector-btn">
-          <img src="images/Icon - Menu.png" alt="icon menu" />
-        </button>
-        <div class="menu">
-          <ul>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          </div> 
-      </nav>
+  
+        <nav class="header-bar">
+          <a href="" class="logo-info">Stanley</a>
+            <img class="hamburger-icon" src="images/Icon - Menu.png" alt="icon menu" />
+            <div class="nav-menu">
+              <img class="menu-cancel" src="images/Icon.svg" alt="close button">
+              <ul>
+                <li class="nav-item">
+                  <a href="#works" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about-myself" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact-link" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+      
     </header>
 
     <main class="main">
       <section class="welcome">
-        <div class="container-1">
-          <h1 class="title">I'm Stanley glad to see you!</h1>
-          <p class="detailed">
+        <div class="welcome-container">
+          <h1 class="title">I'm Stanley <br> Glad to see you!</h1>
+          <p class="detailed-description">
             I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
           </p>
           <h2 class="connect">LET'S CONNECT</h2>
@@ -61,29 +68,59 @@
           </ul>
         </div>
       </section>
-
+      <!--Project-card-section-->
       <section id="works" class="work-section">
-        <a id="portfolio"></a>
+       
         <div class="section-grid">
 
           <div class="project-card">
-            <a href="#snapshot">
+              
               <img
               class="snapshot-portfolio-img"
                 src="images/Snapshoot Portfolio.png"
                 alt="snapshot-portfolio"
               />
-            </a>
+            
+            <div class="project-text">
+              <h2 class="project-title">Tonic</h2>
+                <div class="counter">
+                  <h3 class="canopy">CANOPY</h3>
+                  <ul class="canopy-text">
+                    <li><img src="images/Counter.png" alt="circle" /></li>
+                    <li>Back End Dev</li>
+                    <li><img src="images/Counter.png-2.png" alt="circle" /></li>
+                    <li>2015</li>
+                  </ul>
+                </div>
 
-            <a href="#snapshot">
-              <img
-              class="snapshot-portfolio-img-desktop"
-                src="desktop/Nature Snapshoot Portfolio.svg"
-                alt="Nature portfolio image"
-              />
-            </a>
-
-            <div class="left-block">
+              <div class="primary-text">
+                <p>
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
+              </div>
+              <div class="languages">
+                <ul class="programming-languages">
+                  <li><a href="https://www.w3schools.com/html/" class="btn">html</a></li>
+                  <li><a href="https://www.w3schools.com/w3css/defaulT.asp" class="btn">css</a></li>
+                  <li><a href="https://javascript.info/" class="btn">JavScript</a></li>
+                </ul>
+              </div>
+              <div class="text-see-project">
+                <a class="see-project-button" href="#">See Project</a>
+              </div>
+            </div>
+          </div>
+            
+          <div class="project-card">
+              
+            <img
+            class="snapshot-portfolio-img"
+              src="images/Snapshoot Availability.png"
+              alt="snapshot-portfolio"
+            />
+          
+            <div class="project-text">
               <h2 class="project-title">Tonic</h2>
                 <div class="counter">
                   <h3 class="canopy">CANOPY</h3>
@@ -115,188 +152,60 @@
           </div>
 
           <div class="project-card">
-            <a href="#snapshot">
-              <img
-              class="snapshot-portfolio-img"
-                src="images/Snapshoot Availability.png"
-                alt="Availability portfolio image"
-              />
-            </a>
-
-            <div class="left-block">
-              <div class="mobile">
-                <h2 class="project-title">Multi-Post
-                  Stories</h2>
-                  <div class="counter">
-                    <h3 class="canopy">CANOPY</h3>
-                    <ul class="canopy-text">
-                      <li><img src="images/Counter.png" alt="Counter circle image" /></li>
-                      <li>Back End Dev</li>
-                      <li><img src="images/Counter.png-2.png" alt="Counter circle image" /></li>
-                      <li>2015</li>
-                    </ul>
-                  </div>
-  
-                <div class="primary-text">
-                  <p>
-                    A daily selection of privately personalized reads; no accounts
-                    or sign-ups required.
-                  </p>
-                </div>
-                <div class="languages">
-                  <ul class="programming-languages">
-                    <li><a href="https://www.w3schools.com/html/" class="btn">html</a></li>
-                    <li><a href="https://www.w3schools.com/w3css/defaulT.asp" class="btn">css</a></li>
-                    <li><a href="https://javascript.info/" class="btn">JavScript</a></li>
-                  </ul>
-                </div>
+                
+            <img
+            class="snapshot-portfolio-img"
+              src="images/Snapshoot Gymfit.png"
+              alt="snapshot-portfolio"
+            />
+          
+          <div class="project-text">
+            <h2 class="project-title">Tonic</h2>
+              <div class="counter">
+                <h3 class="canopy">CANOPY</h3>
+                <ul class="canopy-text">
+                  <li><img src="images/Counter.png" alt="circle" /></li>
+                  <li>Back End Dev</li>
+                  <li><img src="images/Counter.png-2.png" alt="circle" /></li>
+                  <li>2015</li>
+                </ul>
               </div>
 
-              <div class="desktop-part">
-                <h2 class="project-title">Multi-Post
-                  Stories</h2>
-                  <div class="counter">
-                    <h3 class="canopy">FACEBOOK</h3>
-                    <ul class="canopy-text">
-                      <li><img src="images/Counter.png" alt="Counter circle image" /></li>
-                      <li>Back End Dev</li>
-                      <li><img src="images/Counter.png-2.png" alt="Counter circle image" /></li>
-                      <li>2015</li>
-                    </ul>
-                  </div>
-    
-                <div class="primary-text">
-                  <p>
-                    Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
-                  </p>
-                </div>
-                <div class= "languages">
-                  <ul class="programming-languages">
-                    <li><a href="https://www.w3schools.com/html/" class="btn">html</a></li>
-                    <li><a href="https://rubyonrails.org/" class="btn">Ruby on rails</a></li>
-                    <li><a href="https://www.w3schools.com/w3css/defaulT.asp" class="btn">css</a></li>
-                    <li><a href="https://javascript.info/" class="btn">JavScript</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="text-see-project">
-                <a class="see-project-button" href="https://github.com/chepkok3/Personal-Portfolio">See Project</a>
-              </div>
+            <div class="primary-text">
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
+              </p>
             </div>
-            
-              <a href="#snapshot">
-              <img
-              class="snapshot-portfolio-img-desktop"
-                src="desktop/Print Snapshoot Portfolio.svg"
-                alt="Print portfolio image"
-              />
-              </a>
-          </div> 
-
-          <div class="project-card">
-            <a href="#snapshot">
-              <img
-              class="snapshot-portfolio-img"
-                src="images/Snapshoot Gymfit.png"
-                alt=" Gymfit portfolio image"
-              />
-            </a>
-
-            <a href="#snapshot">
-              <img
-              class="snapshot-portfolio-img-desktop"
-                src="desktop/1 Snapshoot Portfolio.png"
-                alt="Tanner Christensen professional history"
-              />
-            </a>
-
-            <div class="left-block">
-              <div class="mobile">
-                <h2 class="project-title">Tonic</h2>
-                <div class="counter">
-                  <h3 class="canopy">CANOPY</h3>
-                  <ul class="canopy-text">
-                    <li><img src="images/Counter.png" alt="Counter circle image" /></li>
-                    <li>Back End Dev</li>
-                    <li><img src="images/Counter.png-2.png" alt="Counter circle image" /></li>
-                    <li>2015</li>
-                  </ul>
-                </div>
-
-                  <div class="primary-text">
-                    <p>
-                      A daily selection of privately personalized reads; no accounts
-                      or sign-ups required.
-                    </p>
-                  </div>
-               
-                  <div class="languages">
-                    <ul class="programming-languages">
-                      <li><a href="https://www.w3schools.com/html/" class="btn">html</a></li>
-                    <li><a href="https://www.w3schools.com/w3css/defaulT.asp" class="btn">css</a></li>
-                    <li><a href="https://javascript.info/" class="btn">JavScript</a></li>
-                    </ul>
-                  </div>
-                  <div class="text-see-project">
-                    <a class="see-project-button" href="https://github.com/chepkok3/Personal-Portfolio">See Project</a>
-                  </div>
-              </div>
-
-              <div class="desktop-part">
-                <h2 class="project-title">Facebook 360</h2>
-                <div class="counter">
-                  <h3 class="canopy">FACEBOOK</h3>
-                  <ul class="canopy-text">
-                    <li><img src="images/Counter.png" alt="Counter circle image" /></li>
-                    <li>Back End Dev</li>
-                    <li><img src="images/Counter.png-2.png" alt="Counter circle image" /></li>
-                    <li>2015</li>
-                  </ul>
-                </div>
-    
-                <div class="primary-text">
-                  <p>
-                  Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
-                  </p>
-                </div>
-                <div class= "languages">
-                  <ul class="programming-languages">
-                    <li><a href="https://www.w3schools.com/html/" class="btn">html</a></li>
-                    <li><a href="https://rubyonrails.org/" class="btn">Ruby on rails</a></li>
-                    <li><a href="https://www.w3schools.com/w3css/defaulT.asp" class="btn">css</a></li>
-                    <li><a href="https://javascript.info/" class="btn">JavScript</a></li>
-                  </ul>
-                </div>
-                <div class="text-see-project-desktop">
-                  <a class="see-project-btn" href="https://github.com/chepkok3/Personal-Portfolio">See Project</a>
-                </div>
-
-                <div class="hand-cursor">
-                  <img src="desktop/hand-cursor 1.png" alt="Hand cursor image">
-                </div>
-              </div>
+            <div class="languages">
+              <ul class="programming-languages">
+                <li><a href="https://www.w3schools.com/html/" class="btn">html</a></li>
+                <li><a href="https://www.w3schools.com/w3css/defaulT.asp" class="btn">css</a></li>
+                <li><a href="https://javascript.info/" class="btn">JavScript</a></li>
+              </ul>
             </div>
+            <div class="text-see-project">
+              <a class="see-project-button" href="#">See Project</a>
+            </div>
+          </div>
           </div>
 
           <div class="project-card">
-            <a href="#snapshot">
-              <img
-              class="snapshot-portfolio-img"
-                src="images/Snapshoot Printing.png"snapshot-portfolio" alt="Printing portfolio image"
-              />
-            </a>
-
-            <div class="left-block">
-             <div class="mobile">
-              <h2 class="project-title">Multi-Post
-                Stories</h2>
+                  
+            <img
+            class="snapshot-portfolio-img"
+              src="images/Snapshoot Printing.png"
+              alt="snapshot-portfolio"
+            />
+          
+            <div class="project-text">
+              <h2 class="project-title">Tonic</h2>
                 <div class="counter">
                   <h3 class="canopy">CANOPY</h3>
                   <ul class="canopy-text">
-                    <li><img src="images/Counter.png" alt="Counter circle image" /></li>
+                    <li><img src="images/Counter.png" alt="circle" /></li>
                     <li>Back End Dev</li>
-                    <li><img src="images/Counter.png-2.png" alt="Counter circle image" /></li>
+                    <li><img src="images/Counter.png-2.png" alt="circle" /></li>
                     <li>2015</li>
                   </ul>
                 </div>
@@ -314,56 +223,20 @@
                   <li><a href="https://javascript.info/" class="btn">JavScript</a></li>
                 </ul>
               </div>
-             </div>
-
-              <div class="desktop-part">
-                <h2 class="project-title">Uber Navigation</h2>
-              <div class="counter">
-                <h3 class="canopy">Uber</h3>
-                <ul class="canopy-text">
-                  <li><img src="images/Counter.png" alt="Counter circle image" /></li>
-                  <li>Lead Developer</li>
-                  <li><img src="images/Counter.png-2.png" alt="Counter circle image" /></li>
-                  <li>2018</li>
-                </ul>
-              </div>
-    
-            <div class="primary-text">
-              <p>
-                A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
-              </p>
-            </div>
-            <div class="languages">
-              <ul class="programming-languages">
-                <li><a href="https://www.w3schools.com/html/" class="btn">html</a></li>
-                <li><a href="https://rubyonrails.org/" class="btn">Ruby on rails</a></li>
-                <li><a href="https://www.w3schools.com/w3css/defaulT.asp" class="btn">css</a></li>
-                <li><a href="https://javascript.info/" class="btn">JavScript</a></li>
-              </ul>
-            </div>
-              </div>
-
               <div class="text-see-project">
-                <a class="see-project-button" href="https://github.com/chepkok3/Personal-Portfolio">See Project</a>
+                <a class="see-project-button" href="#">See Project</a>
               </div>
             </div>
-            <a href="#snapshot">
-              <img
-              class="snapshot-portfolio-img-desktop"
-                src="desktop/Avail Snapshoot Portfolio.png"
-                alt="Avail portfolio image"
-              />
-              </a>
-        </div>
+          </div>
+
       </section>
           
-      <section class="about-myself-section">
-        <a id="about"></a>
+      <sectionn id="about-myself" class="about-myself-section">
         <div class="top">
           <div class="title">
             <h2 class="info-title">About Myself</h2>
           </div>
-          <div class="detailed">
+          <div class="detailed-description">
             <p>
               Hello I’m a software developer! I can help you build a product ,
               feature or website Look through some of my work and experience! If
@@ -399,12 +272,10 @@
         <div class="skill-list">
           <div class="frame-12">
             <div class="frame-7">
-              <nav class="header-bar">
                 <a href="" class="skill-info">Languages</a>
                 <button class="languages-btn">
                   <img src="desktop/arrow-down.png" alt="Arrow down button icon">
                 </button>
-              </nav>
             </div>
             <div class="language-list">
               <ul class="list-frames">
@@ -436,10 +307,10 @@
             </button>
           </div>
         </div>
-      </section>
+      </sectionn>
     </main>
 
-        <footer class="footer-section">
+        <footer id="contact-link" class="footer-section">
           <a id="contact"></a>
           <div class="contact-me-form">
             <div class="contact-info">
@@ -497,5 +368,6 @@
           </div>
         </footer> 
         <button class="my-btn"><a href="#top" >Back to top</a></button>
+        <script src="script.js"></script>
   </body>
 </html>
