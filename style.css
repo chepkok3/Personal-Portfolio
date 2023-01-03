@@ -30,7 +30,6 @@ p {
 
 li {
   list-style: none;
-  text-align: center;
 }
 
 a {
@@ -99,22 +98,26 @@ a::after {
   top: 0;
   width: 100%;
   height: 98vh;
-  background-color: #071eecef;
+  background-color: #6070ff;
   padding: 16px;
   text-align: right;
 }
 
-.nav-menu img {
-  padding-top: 14px;
+.nav-menu .menu-cancel {
+  text-align: right;
+  padding-top: 16px;
+  padding-right: 10px;
   left: 100%;
+  color: #fff;
 }
 
 .nav-menu ul {
   color: #fff;
-  line-height: 44px;
+  line-height: 70px;
   font-weight: 600;
   font-size: 32px;
   text-align: left;
+  padding-top: 16px;
 }
 
 .nav-menu.active {
@@ -127,6 +130,15 @@ a::after {
 
 .nav-item :hover {
   color: dodgerblue;
+}
+
+.nav-link {
+  color: #fff;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: left;
+  padding-left: 10%;
 }
 
 .welcome {
@@ -600,7 +612,7 @@ a::after {
 
   .nav-menu {
     position: fixed;
-    left: 70%;
+    left: 55%;
     top: 0;
     width: 90vw;
     background-color: transparent;
@@ -614,7 +626,17 @@ a::after {
   .nav-menu ul {
     display: flex;
     gap: 16px;
+    padding-top: 6px;
     color: #344563;
+  }
+
+  .nav-link {
+    color: #344563;
+    line-height: 44px;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: left;
+    padding-right: 16%;
   }
 
   .welcome {
