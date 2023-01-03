@@ -613,12 +613,11 @@ a::after {
   }
 
   .nav-menu {
-    position: fixed;
     left: 55%;
     top: 0;
-    width: 90vw;
+    width: 100vw;
+    height: 0;
     background-color: transparent;
-    border: 1px;
   }
 
   .nav-menu img {
@@ -630,6 +629,9 @@ a::after {
     gap: 16px;
     padding-top: 6px;
     color: #344563;
+    line-height: 0px;
+    font-weight: 600;
+    font-size: 32px;
   }
 
   .nav-link {
