@@ -202,13 +202,6 @@ a::after {
   padding-bottom: 12px;
 }
 
-.section-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 88px;
-  padding: 64px 16px;
-}
-
 .project-card {
   border-radius: 16px;
   border: solid 1px;
@@ -217,7 +210,7 @@ a::after {
   max-width: 400px;
   margin: auto;
   background-color: #fff;
-  height: 85vh;
+  height: 100vh;
 }
 
 .snapshot-portfolio-img {
@@ -292,18 +285,6 @@ a::after {
   padding-bottom: 12px;
 }
 
-.languages a {
-  border-radius: 8px;
-  padding: 4px 12px;
-  background-color: #ebebff;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: #6070ff;
-}
-
 .text-see-project {
   padding-top: 12px;
 }
@@ -340,16 +321,17 @@ a::after {
 .about-myself-section {
   color: #344563;
   border-radius: 16px;
-  padding: 16px;
-  margin: auto;
+  padding-top: 114px;
   margin-bottom: 0.01px;
   background-color: #fff;
   align-items: center;
 }
 
 .top {
-  margin-left: 12px;
-  padding: 44px 16px;
+  margin-top: 70px;
+  border-top-right-radius: 90px;
+  padding: 114px 16px;
+  background-color: #fff;
 }
 
 .info-title {
@@ -389,6 +371,7 @@ a::after {
   border-radius: 0.01px;
   padding: 8px 16px;
   gap: 24px;
+  background-color: #fff;
 }
 
 .skill-info {
@@ -607,6 +590,174 @@ a::after {
   padding: 180px 24px 0;
 }
 
+/* modal-window styles */
+.modal-header {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal-canopy {
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal-text {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #344563;
+}
+
+.modal-canopy-text {
+  display: flex;
+  padding: 0;
+  justify-content: left;
+  gap: 1.25rem;
+  letter-spacing: 0.05em;
+  list-style-type: none;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.modal-snapshot-portfolio-img {
+  display: none;
+}
+
+.modal-supporting-text {
+  display: grid;
+  gap: 12px;
+  border-radius: 16px;
+  padding: 16px 0;
+}
+
+.modal-paragraph {
+  padding-top: 12px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.modal-technologies {
+  display: flex;
+  list-style-type: none;
+}
+
+.modal-front {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.tech {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.modal-button {
+  display: flex;
+}
+
+.modal-btn {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+  border: 1px solid rgb(140, 140, 230);
+  color: #6070ff;
+  border-radius: 12px;
+  margin: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+  width: 8rem;
+  gap: 12px;
+  padding: 8px;
+}
+
+.modal-btn:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+.modal-back {
+  display: none;
+}
+
+.mobile-cards {
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .close-modal {
+    position: absolute;
+    z-index: 2;
+    right: 10%;
+    top: 6%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .desktop-cards {
+    display: none;
+  }
+
+  .desktop-snapshot-portfolio-img {
+    display: none;
+  }
+
+  .paragraph {
+    display: none;
+  }
+
+  .languages .btn {
+    border-radius: 8px;
+    padding: 4px 12px;
+    background-color: #ebebff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #6070ff;
+  }
+
+  .modal-content {
+    padding: 12px;
+    width: 90%;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .hamburger-icon {
     display: none;
@@ -678,6 +829,44 @@ a::after {
     padding-top: 12px;
   }
 
+  /* desktop modal window styles */
+
+  .modal-content {
+    padding: 32px;
+    width: 90%;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    height: 70%;
+  }
+
+  .modal-paragraph {
+    display: none;
+  }
+
+  .mobile-cards {
+    display: none;
+  }
+
+  .desktop-cards {
+    padding: 36px 44px;
+  }
+
+  .languages li {
+    border-radius: 8px;
+    padding: 4px 12px;
+    background-color: #ebebff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #6070ff;
+  }
+
   .project-card {
     display: flex;
     gap: 5vw;
@@ -686,16 +875,72 @@ a::after {
   }
 
   .project-text {
+    margin-top: 0;
     margin-top: 1rem;
     width: 60vw;
   }
 
-  .project-card:nth-child(2) {
+  .desktop-cards:nth-child(2) {
     flex-flow: row-reverse;
   }
 
-  .project-card:last-child {
+  .desktop-cards:last-child {
     flex-flow: row-reverse;
+  }
+
+  .modal-supporting-text {
+    display: flex;
+  }
+
+  .paragraph {
+    padding-top: 12px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .modal-technologies {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .modal-front {
+    display: flex;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+  }
+
+  .modal-back {
+    display: flex;
+    left: 0;
+    border-radius: 0;
+  }
+
+  .modal-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+
+  .close-modal {
+    position: absolute;
+    z-index: 1000;
+    right: 10%;
+    top: 7%;
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+  }
+
+  .modal-image-mobile {
+    display: none;
+  }
+
+  .mobile-snapshot-portfolio-img {
+    display: none;
   }
 
   .about-myself-section {
@@ -706,6 +951,7 @@ a::after {
     border-top-right-radius: 90px;
     border-bottom-left-radius: 0;
     padding-right: 20px;
+    background-color: #fff;
   }
 
   .text-see-project a {
