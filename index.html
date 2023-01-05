@@ -164,34 +164,44 @@
             <h2 class="contact-title">Contact me</h2>
             <p class="content-text">
               If you have an application you are interested in developing, a
-              feature that you need built or a project that needs coding. I’d love
-              to help with it
+              feature that you need built or a project that needs coding. I’d
+              love to help with it
             </p>
           </div>
 
-          <form action="https://formspree.io/f/xpznvyer" method="POST"      class="contact-form">
+          <form
+            action="https://formspree.io/f/xpznvyer"
+            method="POST"
+            class="contact-form"
+            
+          >
             <div class="footer-field">
-              <label class="name-visibility" for="name">Enter user name</label><br>
+              
               <input
                 required
                 id="name"
                 name="user-name"
-                placeholder="Yeremias"
+                placeholder="Enter your user name"
                 minlength="1"
                 maxlength="30"
                 type="text"
               />
+            </div>
+
+            <div class="footer-field">
               
+              <input
+                required
+                
+                name="Email"
+                id="email"
+                placeholder="Enter email address i.e natajayanj14@gmail.com"
+                type="email"
+              />
             </div>
 
             <div class="footer-field">
-              <label class="email-visibility" for="email">Enter your email address</label><br>
-              <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="Email" id="email" placeholder="natajayanj14@gmail.com"
-                type="email" />
-            </div>
-
-            <div class="footer-field">
-              <label class="text-msg-visibility" for="message">Enter your message here</label><br>
+            
               <textarea
                 name="message"
                 id="message"
@@ -199,7 +209,6 @@
                 placeholder="Write your message here"
                 maxlength="500"
                 required
-
                 type="text"
                 cols="30"
                 rows="10"
@@ -207,13 +216,12 @@
             </div>
 
             <div class="footer-text">
-              <button class="footer-button" type="submit">
-                Get In Touch
-              </button>
+              <button class="footer-button" type="submit">Get In Touch</button>
             </div>
+           
           </form>
         </div>
-      </footer> 
+      </footer>
       <button class="my-btn"><a href="#top" >Back to top</a></button>
       <script src="script.js"></script>
     </div>
