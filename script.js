@@ -192,9 +192,9 @@ desktopProjects.forEach((desktopProject, desktopIndex) => {
     <div class="text-see-project">
       <a class="see-project-button" id=${desktopIndex} href="#">See Project</a>
     </div>
+    </div>
   </div>
 </div>
-  </div>
 `;
   projectContainer.innerHTML += eachDesktopProject;
 });
@@ -204,12 +204,11 @@ const projectButtons = document.querySelectorAll('.text-see-project');
 const modalContent = (project) => {
   const popup = `
   <div class="modal-content">
-  <div class="modal-header">
-    <h2 class="modal-name">${project.modalName} 
-  </h2>
-  
-  </div>
-  <div class="modal-canopy">
+    <div class="modal-header">
+      <h2 class="modal-name">${project.modalName} 
+    </h2>
+    </div>
+    <div class="modal-canopy">
       <h3 class="modal-text">CANOPY</h3>
       <ul class="modal-canopy-text">
         <li><img src="images/Counter.png" alt="circle" /></li>
@@ -232,14 +231,14 @@ const modalContent = (project) => {
     />
 
     <div class="modal-supporting-text">
-    <p class="modal-paragraph">
-      Lorem Ipsum is simply dummy text of the printing and typesetting
-      industry. Lorem Ipsum has been the industry's standard dummy text
-      ever since the 1500s, when an unknown printer took a galley of
-      type and scrambled it to make a type specimen book. It has
-      survived not only five centuries, but also the leap into
-      electronic typesetting, remaining essent
-    </p>
+      <p class="modal-paragraph">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of
+        type and scrambled it to make a type specimen book. It has
+        survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essent
+      </p>
       <div class="paragraph">
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -259,6 +258,7 @@ const modalContent = (project) => {
           1960s with the relea
         </p>
       </div>
+  
       <div class="tech-buttons">
         <ul class="modal-technologies">
           <div class="modal-front">
@@ -295,25 +295,25 @@ const modalContent = (project) => {
             </li>
           </div>
         </ul>
-            <div class="modal-button">
-              <a href="${project.demo}" class="modal-btn"
-                ><span>See Demo</span>
-                <img src="desktop/Icon.png" alt="live" width="10" height="10"
-              /></a>
-              <a href="${project.source}" class="modal-btn"
-                ><span>See Source</span>
-                <img
-                  src="desktop/github-vector.png"
-                  alt="github link"
-                  width="10"
-                  height="10"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
+      
+      <div class="modal-button">
+        <a href="${project.demo}" class="modal-btn"
+          ><span>See Demo</span>
+          <img src="desktop/Icon.png" alt="live" width="10" height="10"
+        /></a>
+        <a href="${project.source}" class="modal-btn"
+          ><span>See Source</span>
+          <img
+            src="desktop/github-vector.png"
+            alt="github link"
+            width="10"
+            height="10"
+          />
+        </a>
       </div>
-  
+      </div>
+    </div>
+  </div> 
   `;
   modalContainer.innerHTML = popup;
   mainModalContainer.style.visibility = 'visible';
