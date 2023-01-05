@@ -343,7 +343,7 @@ const form = document.querySelector('.contact-form');
 /* validate email function */
 
 function containUppercase(str) {
-  return /[^a-z]/.test(str); 
+  return /[^a-z]/.test(str);
 }
 
 /* event listener for email submission */
