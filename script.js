@@ -342,7 +342,7 @@ const form = document.querySelector('.contact-form');
 
 /* validate email function */
 
-function containsUppercase(str) {
+function containUppercase(str) {
   return /[^a-z]/.test(str); 
 }
 
@@ -351,8 +351,8 @@ function containsUppercase(str) {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const emailEntered = document.forms.contactMe.Email.value;
-  if (containsUppercase(emailEntered)) {
-    document.querySelector('.error-information').innerHTML = 'There should be no capital letters in your email, please remove it!';
+  if (containUppercase(emailEntered)) {
+    document.querySelector('.error-information').innerText = 'There should be no capital letters in your email, please remove it!';
     return false;
   }
   return form.submit();
