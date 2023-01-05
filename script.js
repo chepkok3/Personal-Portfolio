@@ -317,7 +317,8 @@ const modalContent = (project) => {
   `;
   modalContainer.innerHTML = popup;
   mainModalContainer.style.visibility = 'visible';
-  mainModalContainer.style.display = 'block';
+  // mainModalContainer.style.display = 'block';
+  mainModalContainer.classList.add('active');
   wholeCont.style.display = 'none';
 };
 
@@ -330,6 +331,7 @@ projectButtons.forEach((projectBtn) => {
 });
 const closeModalButton = document.querySelector('.close-modal');
 closeModalButton.addEventListener('click', () => {
-  mainModalContainer.style.display = 'none';
+  // mainModalContainer.style.display = 'none';
+  mainModalContainer.classList.remove('active');
   wholeCont.style.display = 'block';
 });

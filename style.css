@@ -591,6 +591,14 @@ a::after {
 }
 
 /* modal-window styles */
+
+.modal-window {
+  display: none;
+}
+
+.modal-window.active {
+  display: block;
+}
 .modal-header {
   font-size: 36px;
   font-weight: 700;
