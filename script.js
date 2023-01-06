@@ -397,6 +397,6 @@ document.querySelectorAll('input, textarea').forEach((input) => {
 });
 
 // Ensure that the form remains in current load
-formId.addEventListener('submit', (e) => {
-  e.preventDefault();
+formId.addEventListener('submit', (event) => {
+  event.preventDefault();
 });
