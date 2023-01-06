@@ -919,6 +919,8 @@ a::after {
   }
 
   .desktop-cards {
+    display: flex;
+    flex-direction: column;
     padding: 36px 44px;
   }
 

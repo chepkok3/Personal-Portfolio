@@ -343,7 +343,7 @@ const form = document.querySelector('.contact-form');
 /* validate email function */
 
 function containUppercase(str) {
-  return /[^a-z]/.test(str);
+  return /[A-Z]/.test(str);
 }
 
 /* event listener for email submission */
@@ -356,4 +356,47 @@ form.addEventListener('submit', (e) => {
     return false;
   }
   return form.submit();
+});
+
+// preserve data in the browser
+
+// initialize data ids
+
+const formId = document.getElementById('contact-me-form');
+const userNameId = document.getElementById('name');
+const userEmailId = document.getElementById('email');
+const userMessageId = document.getElementById('message');
+const accessLocalStorage = localStorage.getItem('userProvidedDetails');
+
+// Load to every contact form field in case already saved local storage data exists.
+
+if (accessLocalStorage) {
+  const dataSave = JSON.parse(accessLocalStorage);
+  userNameId.value = dataSave.name;
+  userEmailId.value = dataSave.email;
+  userMessageId.value = dataSave.message;
+}
+
+document.querySelectorAll('input, textarea').forEach((input) => {
+  input.addEventListener('input', (event) => {
+    event.preventDefault();
+    // call input values
+    const userNameData = document.getElementById('name').value;
+    const userEmailData = document.getElementById('email').value;
+    const userMessageData = document.getElementById('message').value;
+
+    // JavaScript object for the form values
+    const providedDetails = {
+      name: userNameData,
+      email: userEmailData,
+      message: userMessageData,
+    };
+
+    localStorage.setItem('userProvidedDetails', JSON.stringify(providedDetails));
+  });
+});
+
+// Ensure that the form remains in current load
+formId.addEventListener('submit', (event) => {
+  event.preventDefault();
 });
