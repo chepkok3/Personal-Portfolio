@@ -39,7 +39,7 @@ const projects = [
     name: 'Tonic',
     information: ['Canopy', 'Back End Dev', '2015'],
     description:
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     modalName: 'Tonic',
     technologies: ['Html', 'css', 'JavaScript'],
     demo: 'https://chepkok3.github.io/Personal-Portfolio/#',
@@ -50,7 +50,7 @@ const projects = [
     name: 'Tonic',
     information: ['Canopy', 'Back End Dev', '2015'],
     description:
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['Html', 'css', 'JavaScript'],
     modalName: 'Tonic',
     demo: 'https://chepkok3.github.io/Personal-Portfolio/#',
@@ -61,7 +61,7 @@ const projects = [
     name: 'Tonic',
     information: ['Canopy', 'Back End Dev', '2015'],
     description:
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['Html', 'css', 'JavaScript'],
     modalName: 'Tonic',
     demo: 'https://chepkok3.github.io/Personal-Portfolio/#',
@@ -90,7 +90,7 @@ projects.forEach((project, index) => {
   <div class="mobile-cards">
   <div class="project-card">
   <img
-    class="snapshot-portfolio-img"
+    class="mob-snapshot-portfolio-img"
     src=${project.featuredImage}
     alt="snapshot-portfolio"
   />
@@ -135,7 +135,7 @@ const desktopProjects = [
     name: 'Multi Post Stories',
     technologies: ['Facebook', 'Fullstack Dev', '2015'],
     information:
-    'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     languages: ['html', 'Ruby on rails', 'css', 'javascript'],
     desktopImages: 'desktop/Avail-Snapshoot-Portfolio.png',
   },
@@ -143,15 +143,15 @@ const desktopProjects = [
     name: 'Multi Post Stories',
     technologies: ['Facebook', 'Fullstack Dev', '2015'],
     information:
-    'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     languages: ['html', 'Ruby on rails', 'css', 'javascript'],
-    desktopImages: 'desktop/Snapshoot-Portfolio.png',
+    desktopImages: 'desktop/Nature-Snapshoot-Portfolio.png',
   },
   {
     name: 'Multi Post Stories',
     technologies: ['Facebook', 'Fullstack Dev', '2015'],
     information:
-    'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     languages: ['html', 'Ruby on rails', 'css', 'javascript'],
     desktopImages: 'desktop/Print-Snapshoot-Portfolio.png',
   },
@@ -169,29 +169,29 @@ desktopProjects.forEach((desktopProject, desktopIndex) => {
 
   const eachDesktopProject = `
   <div class = "desktop-cards">
-  <div class="project-card">
-  <img
-  class="snapshot-portfolio-img"
-    src=${desktopProject.desktopImages}
-    alt="snapshot-portfolio"
-  />
-  <div class="project-text">
-    <h2 class="project-title">${desktopProject.name}</h2>
-    <div class="counter">
-    ${technology}
-    </div>
-    
-    <div class="primary-text">
-    ${desktopProject.information}
-    </div>
-    <div class="languages">
-      <ul class="programming-languages">
-      ${language}
-      </ul>
-    </div>
-    <div class="text-see-project">
-      <a class="see-project-button" id=${desktopIndex} href="#">See Project</a>
-    </div>
+    <div class="project-card">
+    <img
+    class="desk-snapshot-portfolio-img"
+      src=${desktopProject.desktopImages}
+      alt="snapshot-portfolio"
+    />
+    <div class="project-text">
+      <h2 class="project-title">${desktopProject.name}</h2>
+      <div class="counter">
+      ${technology}
+      </div>
+      
+      <div class="primary-text">
+      ${desktopProject.information}
+      </div>
+      <div class="languages">
+        <ul class="programming-languages">
+        ${language}
+        </ul>
+      </div>
+      <div class="text-see-project">
+        <a class="see-project-button" id=${desktopIndex} href="#">See Project</a>
+      </div>
     </div>
   </div>
 </div>
@@ -392,7 +392,10 @@ document.querySelectorAll('input, textarea').forEach((input) => {
       message: userMessageData,
     };
 
-    localStorage.setItem('userProvidedDetails', JSON.stringify(providedDetails));
+    localStorage.setItem(
+      'userProvidedDetails',
+      JSON.stringify(providedDetails),
+    );
   });
 });
 

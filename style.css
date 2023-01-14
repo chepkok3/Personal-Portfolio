@@ -134,7 +134,7 @@ a::after {
   color: #344563;
   padding: 16px;
   background-color: #fff;
-  background-image: url("images/header-shapes\ mobile@2x.svg");
+  background-image: url('images/header-shapes\ mobile@2x.svg');
   background-size: contain;
   background-repeat: no-repeat;
   padding-bottom: 250px;
@@ -199,7 +199,11 @@ a::after {
   height: 100vh;
 }
 
-.snapshot-portfolio-img {
+.desk-snapshot-portfolio-img {
+  display: none;
+}
+
+.mob-snapshot-portfolio-img {
   width: 100%;
   border-radius: 8px;
 }
@@ -370,6 +374,7 @@ a::after {
   width: 100%;
   border-radius: 0.01px;
   padding-left: 44px;
+  padding-bottom: 20%;
   gap: 24px;
   background-color: #fff;
 }
@@ -584,10 +589,12 @@ a::after {
   display: flex;
   justify-content: center;
   background-color: #396df2;
-  background-image: url("images/contact-background.png");
+  background-image: url('images/contact-background.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 180px 24px 0;
+  padding-top: 0%;
+  margin-top: -15%;
 }
 
 /* modal-window styles */
@@ -666,7 +673,7 @@ a::after {
 }
 
 .tech {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -688,7 +695,7 @@ a::after {
 }
 
 .modal-btn {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -761,7 +768,7 @@ a::after {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   max-width: 100%;
 }
 
@@ -821,7 +828,7 @@ a::after {
 
   .nav-menu {
     line-height: 74%;
-    left: 12px;
+    left: -4%;
     top: 10px;
     width: 100vw;
     height: 0;
@@ -860,7 +867,7 @@ a::after {
   }
 
   .welcome {
-    background-image: url("desktop/Header-bg.svg");
+    background-image: url('desktop/Header-bg.svg');
     margin-bottom: 114px;
   }
 
@@ -888,11 +895,20 @@ a::after {
 
   .detailed-description {
     padding-right: 5%;
+    padding-right: 40%;
   }
 
   .connect {
     margin-top: 0;
     padding-top: 12px;
+  }
+
+  .mob-snapshot-portfolio-img {
+    display: none;
+  }
+
+  .primary-text {
+    padding-right: 10%;
   }
 
   /* desktop modal window styles */
@@ -949,7 +965,7 @@ a::after {
     width: 60vw;
   }
 
-  .desktop-cards:nth-child(2) {
+  .desktop-card:nth-child(2) {
     flex-flow: row-reverse;
   }
 
@@ -1009,6 +1025,11 @@ a::after {
     display: none;
   }
 
+  .desk-snapshot-portfolio-img {
+    display: block;
+    max-width: 100%;
+  }
+
   .mobile-snapshot-portfolio-img {
     display: none;
   }
@@ -1020,7 +1041,9 @@ a::after {
     gap: 12px;
     border-top-right-radius: 90px;
     border-bottom-left-radius: 0;
+    padding-top: 1%;
     padding-right: 20px;
+    padding-bottom: 8%;
     background-color: #fff;
   }
 
@@ -1076,9 +1099,9 @@ a::after {
 
   .footer-section {
     padding-top: 0%;
-    margin-top: 0;
+    margin-top: -5%;
     background-color: #6070ff;
-    background-image: url("desktop/contact\ form\ background\ shapes@2x.png");
+    background-image: url('desktop/contact\ form\ background\ shapes@2x.png');
     background-size: contain;
     background-position: bottom left, right top;
     background-repeat: no-repeat;
