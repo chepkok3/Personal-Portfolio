@@ -31,8 +31,8 @@ const projects = [
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     technologies: ['Html', 'css', 'JavaScript'],
     modalName: 'Tonic',
-    demo: 'https://chepkok3.github.io/Personal-Portfolio/#',
-    source: 'https://github.com/chepkok3/Personal-Portfolio',
+    demo: 'https://chepkok3.github.io/Awesome-Book-App/',
+    source: 'https://github.com/chepkok3/Awesome-Book-App',
   },
   {
     featuredImage: 'images/Snapshoot-Availability.png',
@@ -220,42 +220,23 @@ const modalContent = (project) => {
 
     <img
     class="mobile-snapshot-portfolio-img"
-    src="images/Snapshoot-Portfolio.png"
+    src="projects/books_12827976.jpg"
     alt="snapshot-portfolio"
     />
 
     <img
       class="desktop-snapshot-portfolio-img"
-      src="desktop/Snapshoot-M-Portfolio.png"
+      src="projects/books_12827976.jpg"
       alt="snapshot-portfolio"
     />
 
     <div class="modal-supporting-text">
       <p class="modal-paragraph">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text
-        ever since the 1500s, when an unknown printer took a galley of
-        type and scrambled it to make a type specimen book. It has
-        survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essent
+      Awesome Books is a web app that allows the user to add or remove a list of books as and when he or she desires. It has been build with JavaScript, HTML and CSS styling applied to make it presentable. Added books are kept in the user's browser local storage and when the user deletes each book, it is dynamically removed from the local storage.
       </p>
       <div class="paragraph">
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of
-          type and scrambled it 1960s with the releaLorem Ipsum is simply
-          dummy text of the printing and typesetting industry. Lorem Ipsum
-          has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it
-          1960s with the releorem Ipsum is simply dummy text of the printing
-          and typesetting industry. Lorem Ipsum han printer took a galley of
-          type and scrambled it 1960s with the releawn printer took a galley
-          of type and scrambled it 1960s with the releaLorem Ipsum is simply
-          dummy text of the printing and typesetting industry. Lorem Ipsum
-          has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it
-          1960s with the relea
+        Awesome Books is a web app that allows the user to add or remove a list of books as and when he or she desires. It has been build with JavaScript, HTML and CSS styling applied to make it presentable. Added books are kept in the user's browser local storage and when the user deletes each book, it is dynamically removed from the local storage.
         </p>
       </div>
   
@@ -297,11 +278,11 @@ const modalContent = (project) => {
         </ul>
       
       <div class="modal-button">
-        <a href="${project.demo}" class="modal-btn"
+        <a target = "_blank" href="${project.demo}" class="modal-btn"
           ><span>See Demo</span>
           <img src="desktop/Icon.png" alt="live" width="10" height="10"
         /></a>
-        <a href="${project.source}" class="modal-btn"
+        <a target = "_blank" href="${project.source}" class="modal-btn"
           ><span>See Source</span>
           <img
             src="desktop/github-vector.png"

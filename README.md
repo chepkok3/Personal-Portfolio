@@ -43,7 +43,7 @@ learning how to use git and git. The project name is called personal portfolio.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-https://chepkok3.github.io/Personal-Portfolio/
+- [Live Demo Link](https://chepkok3.github.io/Personal-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -51,9 +51,9 @@ https://chepkok3.github.io/Personal-Portfolio/
 
 👤 **Author1**
 
-- GitHub: chepkok3 (https://github.com/chepkok3)
-- Twitter: @stanleykibor3 (https://twitter.com/home)
-- LinkedIn: Kibor Stanley (https://www.linkedin.com/in/kibor-stanley-350b8a123/)
+- GitHub: [@chepkok3](https://github.com/chepkok3)
+- Twitter: [@chepkok3](https://twitter.com/home)
+- LinkedIn: [@chepkok3](https://www.linkedin.com/in/kibor-stanley-350b8a123/)
 
 👤 **Author2**
 
