@@ -43,7 +43,7 @@ learning how to use git and git. The project name is called personal portfolio.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-https://chepkok3.github.io/Personal-Portfolio/
+- [Live Demo Link](https://chepkok3.github.io/Personal-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -51,9 +51,9 @@ https://chepkok3.github.io/Personal-Portfolio/
 
 👤 **Author1**
 
-- GitHub: chepkok3 (https://github.com/chepkok3)
-- Twitter: @stanleykibor3 (https://twitter.com/home)
-- LinkedIn: Kibor Stanley (https://www.linkedin.com/in/kibor-stanley-350b8a123/)
+- GitHub: [@chepkok3](https://github.com/chepkok3)
+- Twitter: [@chepkok3](https://twitter.com/home)
+- LinkedIn: [@chepkok3](https://www.linkedin.com/in/kibor-stanley-350b8a123/)
 
 👤 **Author2**
 
@@ -102,12 +102,6 @@ I would like to thank Microverse and the reviewers for the support.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this project and associated documentation files, to deal in the project without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the project, and to permit persons to whom the project is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the project.
-
-THE PROJECT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE PROJECT OR THE USE OR OTHER DEALINGS IN THE PROJECT.
+This project is [MIT](https://github.com/chepkok3/Personal-Portfolio/blob/main/LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
